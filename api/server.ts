@@ -24,8 +24,8 @@ app.use(
   })
 );
 
-app.get('/', (req, res) => {
-  res.json({ message: 'Welcome to the Random Ideas API' });
+app.get('/', (_req, _res) => {
+  _res.json({ message: 'Welcome to the Random Ideas API' });
 });
 
 const ideasRouter = require('./routes/ideas');
